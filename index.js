@@ -40,6 +40,27 @@ function addUpTo(arr, ind){
   }
 }
 
-function maxOf(){
+function maxOf (arr){
+  if ( arr.length === 1){
+    return arr[0]
+  }
+  else{
+    return Math.max(arr.pop(), maxOf(arr))
+  }
+}
 
+
+function includesNumber(arr, num){
+  if (!arr.length) {
+    console.log('false')
+  }
+  else{
+    if(arr[0]===num){
+      console.log("true")
+    }
+    else{
+      arr.shift()
+      includesNumber(arr, num)
+    }
+  }
 }
