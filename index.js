@@ -60,7 +60,7 @@ function includesNumber(arr, num){
     }
     else{
       arr.shift()
-      includesNumber(arr, num)
+      return includesNumber(arr, num)
     }
   }
 }
