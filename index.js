@@ -52,11 +52,11 @@ function maxOf (arr){
 
 function includesNumber(arr, num){
   if (!arr.length) {
-    console.log('false')
+    return false
   }
   else{
     if(arr[0]===num){
-      console.log("true")
+      return true
     }
     else{
       arr.shift()
